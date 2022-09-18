@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructors</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+.head-inst{
+margin: 0 auto;		
+display: flex;
+align-items: center;
+justify-content: space-between;        
+}
+.head-inst p span{
+font-size: 40px;
+margin: 0 5px;
+cursor: pointer;
+color: navy;
+width: 30px;
+height: 30px;
+display: inline-block;
+line-height: 19px;
+text-align: center;
+border-radius: 3px;
+}
+.head-inst p span:hover{
+background: yellow;
+color: white;
+}
+.head-inst h1{
+color: navy;
+}
+.inst{
+width: 80rem;
+height: 35rem;
+
+margin: auto;
+display: flex;
+align-items: center;
+overflow-x: auto;
+}
+
+.inst::-webkit-scrollbar{
+display: none;
+}
+.inst .inst-name{
+min-width: 24%;
+height: 30rem;
+background: white;
+margin:  0 20px  0 0;
+
+position: relative;
+left: 0;
+transition: 0.5s;
+
+}
+.inst-img{
+width: 90%;
+
+
+
+display: flex;
+overflow: hidden;
+margin-bottom: 20px;
+}
+.inst-img img{
+width: 100%;
+}
+.instructor{
+background-color: white;
+border: .1rem solid white;
+box-sizing: border-box;
+}
+.inst-detail{
+    
+    border-bottom-style: solid;
+    border-bottom-width: .2rem;
+    width: fit-content;
+    border-color: #ffd000;
+}
+
+
+@media (max-width: 768px) {
+
+.head-inst h1{
+    font-size: 100%;
+}
+.head-inst p span{
+    font-size: 150%;
+}
+.inst .inst-name {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    
+}
+.inst{
+    height: 100%;
+}
+
+.inst-img img{
+    width: 100%;
+    height: auto;
+}
+.head-inst{
+display: block;
+}
+}
+</style>
+</head>
+<body>
+    <div class="instructor">  <!--csr , main-->
+        <div class="head-inst">  <!--head,header-->
+			<h1>Our Skilled Instructors</h1>
+			<p>
+				<span>&#139;</span>
+				<span>&#155;</span>
+			</p>
+        </div>
+        <div class="inst">    <!--section,section-->
+			
+                <div class="inst-name">  <!--product,product-->
+                    <div class="inst-img">  <!--picture,picture-->
+                        <img src="ins_1.PNG" alt="">
+                    </div>
+                    <div class="inst-detail"> <!--detail,detail-->
+                        <p>
+                            <b><h2>David Lee</h2></b>
+                            <b><h4>Web Developer</h4></b>
+                        </p>
+                    </div>
+                </div><!--inst-1-->
+
+				<div class="inst-name">
+                    <div class="inst-img">
+                        <img src="ins_2.PNG" alt="">
+                    </div>
+                    <div class="inst-detail">
+                        <p>
+                            <b><h2> Mike Hussy</h2></b>
+                            <h4>Android Programmer</h4>
+                        </p>
+                    </div>
+                </div><!--inst-2-->
+                
+                <div class="inst-name">
+                    <div class="inst-img">
+                        <img src="ins_3.PNG" alt="">
+                    </div>
+                    <div class="inst-detail">
+                        <p>
+                            <b><h2>Tom Steven</h2></b>
+                            <h4>Data Science</h4>
+                        </p>
+                    </div>
+                </div><!--inst-3-->
+                
+
+                <div class="inst-name">
+                    <div class="inst-img">
+                        <img src="ins_4.PNG" alt="">
+                    </div>
+                    <div class="inst-detail">
+                        <p>
+                            <b><h2>Daziy Millar</h2></b>
+                            <h4>PHP Expert</h4>
+                        </p>  
+                    </div>
+                </div><!--inst-4-->
+                <div class="inst-name">
+                    <div class="inst-img">
+                        <img src="ins_3.PNG" alt="">
+                    </div>
+                    <div class="inst-detail">
+                        <p>
+                            <b><h2>ABC</h2></b>
+                            <b><h4>XYZ</h4></b>
+                        </p>
+                    </div>
+                </div><!--inst-5-->
+                
+            
+
+    </div>
+    <script>
+        let span = document.getElementsByTagName('span');
+        let product = document.getElementsByClassName('inst-name')
+        let product_page = Math.ceil(product.length/4);
+        let l = 0;
+        let movePer = 25.34;
+        let maxMove = 203;
+        // mobile_view	
+        let mob_view = window.matchMedia("(max-width: 768px)");
+        if (mob_view.matches)
+        {
+            movePer = 50.36;
+            maxMove = 504;
+        }
+
+        let right_mover = ()=>{
+            l = l + movePer;
+            if (product == 1){l = 0; }
+            for(const i of product)
+            {
+                if (l > maxMove){l = l - movePer;}
+                i.style.left = '-' + l + '%';
+            }
+
+        }
+        let left_mover = ()=>{
+            l = l - movePer;
+            if (l<=0){l = 0;}
+            for(const i of product){
+                if (product_page>1){
+                    i.style.left = '-' + l + '%';
+                }
+            }
+        }
+        span[1].onclick = ()=>{right_mover();}
+        span[0].onclick = ()=>{left_mover();}
+        
+    </script>
+
+
+
+</body>
+</html>

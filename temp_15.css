@@ -1,0 +1,2136 @@
+
+.navbars {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: pink;*/
+    color: black;
+    flex: 5;
+}
+
+.brand-title {
+    list-style: none;
+    float: left;
+    margin-left: 3rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.toggle-button {
+    position: absolute;
+    top: .50rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background-color: black;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.search-bar{
+    background-color: white;
+    height: 1rem;
+}
+
+.search-box:hover > .search-bar{
+    width: 11rem;
+    height: 2rem;
+    border: .1rem solid black;
+    transition: 0.3s;
+
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: white;
+    border: none;
+    
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10rem;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: yellow;}
+  
+.line1 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .1rem 0;
+}
+.line2 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .2rem 0;
+}
+.line3 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .1rem 0;
+}
+@media (max-width: 800px) {
+    .navbars {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .toggle-button {
+        display: flex;
+        color: black;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links ul li {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbars .dropdown {float: none;}
+    .navbars .dropdown-content {position: relative;}
+    .navbars .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    }
+    .search-bar{
+        width: 2rem;
+        height: 1rem;
+    }
+}
+
+.header{
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone-email{
+    background-color: navy;
+    color: white;
+    display: flex;
+    float: left;
+}
+.ApplyNow{
+    float: center;
+    background-color:#ffd000;
+    text-align: center;
+    
+    color: black;
+    width: 10rem;
+    height: 2rem;
+}
+.ApplyNow a:link, a:visited {
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav{
+    background-color: white;
+    flex: 5;
+    
+}
+.logo{
+    list-style: none;
+    float: left;
+    margin-left: 3rem;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #125688;
+}
+
+.search-bar{
+    background-color: white;
+    width: .1rem;
+    height: 1rem;
+}
+.search-box:hover > .search-bar{
+    width: 11rem;
+    height: 2rem;
+    border: .1rem solid black;
+    transition: 0.3s;
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: white;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 16rem;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: yellow;}
+  
+.line1 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .1rem 0;
+}
+.line2 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .2rem 0;
+}
+.line3 {
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin: .1rem 0;
+}
+  
+  
+
+
+
+
+
+
+
+
+.StartCourse{
+    background-color: #ffd000;
+    color: black;
+    padding: 1rem;
+    width: 15rem;
+    
+}
+.StartCourse a:link, a:visited {
+  
+    text-decoration: none;
+    display: inline-block;
+}
+
+.slideshow{
+    color: white;
+    background-color: black;
+}
+.mySlides{
+    display: none;
+}
+.sld_1 img{
+    width: 65rem;
+    height: 30rem;
+}
+.sld_2 img{
+    width: 65rem;
+    height: 30rem;
+}
+.sld_3 img{
+    width: 65rem;
+    height: 30rem;
+}
+.text-centered p{
+    width: 35rem;
+    height: 3rem;
+}
+
+.text-centered {
+    position: absolute;
+    /*top: 4rem;*/
+    color: white;
+}
+
+.boxes{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftbox{
+    float: left;
+    background-color: navy; 
+    color: white;
+    text-align: center;
+    margin-top: 1.2rem;
+    
+}
+
+.middlebox{
+    float: left;
+    background-color: navy;
+    color: white;
+    text-align: center;
+   
+}
+
+.rightbox{
+    float: left;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.description h1{
+    color: navy;
+    
+}
+
+
+.description{
+    display: flex;
+    justify-content: space-evenly;
+    border: .1rem solid white;
+    box-sizing: border-box;
+}
+
+.ReadMore{
+    background-color:#ffd000; 
+    color: white;
+    text-align: center;
+    
+}
+.ReadMore a:link, a:visited {
+  
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/*for mobile*/
+@media(max-width: 768px){
+    .header{
+        width: auto;
+        height: auto;
+    }
+    .ApplyNow{
+        width: 100%;
+        height: auto;
+    }
+    .nav{
+        width: 100%;
+        height: auto;
+        font-size: 20%;
+    }
+    
+    .sld_1 img{
+        width: 100%;
+        
+    }
+    .sld_2 img{
+        width: 100%;
+        
+    }
+    .sld_3 img{
+        width: 100%;
+        
+    }
+    .text-centered p{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .text-centered {
+        position: absolute;
+        top: 5%;
+        font-size: 100%;
+        text-align: center;
+    }
+    .text-centered h2{
+        text-align: center;
+        font-size: 150%;
+    }
+    .StartCourse {
+        text-align: center;
+        width: 50%;
+        height: auto;
+    }
+    .boxes{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .leftbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .leftbox p{
+        text-align: center;
+    }
+    .middlebox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .middlebox p{
+        text-align: center;
+    }
+    .rightbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .rightbox p{
+        text-align: center;
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .description p{
+        width: 90%;
+        height: auto;
+        font-size: 80%;
+    }
+    .description h1{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .description h4{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .description img{
+        
+        width: auto;
+        height: auto;
+    }
+    .ReadMore{
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width:468px){
+    .header{
+        width: auto;
+        height: auto;
+        font-size: 80%;
+    }
+    .ApplyNow{
+        width: auto;
+        height: auto;
+        font-size: 100%;
+    }
+    .logo{
+        width: auto;
+        height: auto;
+    }
+    nav{
+        width: 100%;
+        height: auto;
+        font-size: 50%;
+        text-align: left;
+    }
+    
+    
+
+    .sld_1 img{
+        width: 100%;
+    }
+    .sld_2 img{
+        width: 100%;
+        
+    }
+    .sld_3 img{
+        width: 100%;
+        
+    }
+    .text-centered p{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .text-centered {
+        position: absolute;
+        top: 5%;
+        font-size: 100%;
+        text-align: center;
+    }
+    .text-centered h2{
+        text-align: center;
+        font-size: 100%;
+    }
+    .StartCourse {
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    
+    .boxes{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .leftbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .leftbox p{
+        text-align: center;
+    }
+    .middlebox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .middlebox p{
+        text-align: center;
+    }
+    .rightbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .rightbox p{
+        text-align: center;
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .description h1{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .description p{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    
+    .description h4{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    .description img{
+        display: none;
+    }
+    .ReadMore{
+        width: auto;
+        height: auto;
+        font-size: 100%;
+    }
+}
+/*for laptops*/
+@media (min-width:1024px){
+    nav{
+        text-align: right;
+    }
+    .search-bar{
+        background-color: white;
+        width: .1rem;
+        height: 1rem;
+    }
+    .sld_1 img{
+        width: 65rem;
+        height: 40rem;
+    }
+    .sld_2 img{
+        width: 65rem;
+        height: 40rem;
+    }
+    .sld_3 img{
+        width: 65rem;
+        height: 40rem;
+    }
+    .text-centered p{
+        width: 35rem;
+        height: 3rem;
+    }
+    
+    .text-centered {
+        position: absolute;
+        top: 4%;
+        color: white;
+    }
+    .leftbox p{
+        width: 20rem;
+        height: 2rem;
+    }
+    .middlebox p{
+        width: 20rem;
+        height: 2rem;
+    }
+    .rightbox p{
+        width: 20rem;
+        height: 2rem;
+    }
+    .leftbox{
+        
+        text-align: center;
+        margin-top: 1.2rem;
+        /*width: 5%;
+        height:180px;*/
+    }
+    
+    .middlebox{
+        
+        border-left: .1rem solid white;
+        border-right: .1rem solid white;
+        height: auto;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    
+    .rightbox{
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+
+    .description h1{
+        margin-left: 3rem;
+    }
+
+    .description h4 {
+        margin-left: 3rem;
+    }
+    .description p {
+        margin-left: 3rem;
+        width: 50rem;
+    }
+    .description img{
+        width: 100%;
+        height: auto;
+    }
+    .ReadMore{
+        margin-left: 3rem;
+    }
+    
+}
+@media (min-width: 769px) and (max-width:1023px){
+    .header{
+        width: auto;
+        height: auto;
+    }
+    .nav{
+        width: 100%;
+        height: auto;
+        font-size: 20%;
+    }
+    
+    .sld_1 img{
+        width: 100%;
+        
+    }
+    .sld_2 img{
+        width: 100%;
+        
+    }
+    .sld_3 img{
+        width: 100%;
+        
+    }
+    .text-centered p{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .text-centered {
+        position: absolute;
+        top: 5%;
+        font-size: 100%;
+        text-align: center;
+    }
+    .text-centered h2{
+        text-align: center;
+        font-size: 150%;
+    }
+    .StartCourse {
+        text-align: center;
+    }
+    .boxes{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .leftbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .leftbox p{
+        text-align: center;
+    }
+    .middlebox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        font-size: 100%;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .middlebox p{
+        text-align: center;
+    }
+    .rightbox{
+        width: 100%;
+        height: auto;
+        background-color: navy;
+        border: .1rem solid white;
+        box-sizing: border-box;
+    }
+    .rightbox p{
+        text-align: center;
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .description h1{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .description p{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    
+    .description h4{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    .description img{
+        width: auto;
+        height: auto;
+    }
+}
+
+
+
+/*course*/
+
+
+.head{
+
+	margin: 0 auto;		
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    
+			
+}
+.head p span{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: yellow;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+.head p span:hover{
+    background: blue;
+    color: white;
+}
+.head h1{
+    color: navy;
+}
+section{
+    width: 75rem;
+    height: 30rem;
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+section .product{
+    min-width: 24%;
+    height: 25rem;
+    background: whitesmoke;
+    margin:  0 1.2rem  0 0;
+    
+    position: relative;
+    left: 0;
+    transition: 0.1s;
+
+}
+picture{
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.csr{
+    background-color: gray;
+    border: .1rem solid pink;
+    box-sizing: border-box;
+}
+.button{
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.vid img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+    
+}
+iframe{
+    width: 78rem;
+    height: 30rem;
+}
+
+.head-inst{
+    margin: 0 auto;		
+    display: flex;
+    align-items: center;
+    justify-content: space-between;        
+}
+.head-inst p span{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: navy;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+.head-inst p span:hover{
+    background: yellow;
+    color: white;
+}
+.head-inst h1{
+    color: navy;
+}
+.inst{
+    width: 80rem;
+    height: 35rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+    
+.inst::-webkit-scrollbar{
+    display: none;
+}
+.inst .inst-name{
+    min-width: 24%;
+    height: 30rem;
+    background: white;
+    margin:  0 20px  0 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    
+}
+.inst-img{
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.inst-img img{
+    width: 100%;
+}
+.instructor{
+    background-color: pink;
+    border: .1rem solid white;
+    box-sizing: border-box;
+}
+
+/*mobile*/
+@media(max-width:768px){
+    .vid img{
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+@media (max-width:468px){
+   .vid img{
+        width: 100%;
+        height: auto;
+        
+    }
+}
+@media (max-width: 768px) {
+    
+    .head h1{
+        font-size: 100%;
+    }
+    .head p span{
+        font-size: 150%;
+    }
+    
+    section .product {
+        
+        height: auto;
+        /*min-width: 23%;*/
+        margin: 0px 15px 0px 0px;
+    }
+    .detail, .button{
+        font-size: 16px;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+
+    .head-inst h1{
+        font-size: 150%;
+    }
+    .head-inst p span{
+        font-size: 150%;
+    }
+    .inst .inst-name {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        
+    }
+    .inst{
+        height: 100%;
+    }
+    
+    .inst-img img{
+        width: 100%;
+        height: auto;
+    }
+    .head-inst{
+    display: block;
+    }
+}
+
+/*for laptop and desktop
+@media (min-width:1024px){
+    same as above 
+}*/
+/*for tablets and ipads*/
+@media (min-width: 769px) and (max-width:1023px){
+    .vid img{
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+
+/*posts*/
+
+.PostEvents{
+    background-color:grey;    
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;   
+}
+
+
+.LatestPosts h3{
+    color: #ffd000;
+}
+.LatestPosts h1{
+    color: navy;
+    
+}
+
+.pst_1{
+    background-color: white;
+    width: 41.5rem;
+    height: 12rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+.pst_1 img{
+    height: 8rem;
+}
+
+.pst_2{
+    background-color: white;
+    width: 41.5rem;
+    height: 12rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.pst_2 img{
+    height: 8rem;
+}
+
+.pst_3{
+    
+    background-color: white;
+    width: 41.5rem;
+    height: 12rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.pst_3 img{
+    height: 8rem;
+}
+
+.UpcomingEvent h3{
+    color: navy;
+}
+.UpcomingEvent h1{
+    color: navy;
+}
+.event_1{
+    background-color: white;
+    width: 40rem;
+    height: 17rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 1rem;
+}
+.event_1 img{
+    width: 10rem;
+}
+.event_2{
+    background-color: white;
+    width: 40rem;
+    height: 18rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 1rem;
+}
+.event_2 img{
+    width: 10rem;
+}
+.numbers{
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num_1{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num_2{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num_3{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num_4{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numbers h1{
+    padding-bottom: .1rem;
+    border-bottom-style: solid;
+    border-bottom-width: .2rem;
+    width: fit-content;
+    border-color: #ffd000;
+}
+
+.testimonals{
+    text-align: center;
+    color: navy;
+}
+.WhatOurStudentSay{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.WhatOurStudentSay h2{
+    color: navy;
+}
+.student_1 fieldset{
+    background-color: gray;
+   
+}
+.student_1 img{
+    width: 5rem;
+}
+.student_2 fieldset{
+    background-color: gray;
+    
+}
+.student_2 img{
+    width: 5rem;
+}
+
+/*for mobile*/
+@media (max-width:768px){
+    .PostEvents{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    .LatestPosts{
+        width: 100%;
+        height: auto;
+    }
+    .LatestPosts h1{
+        font-size: 200%;
+    }
+    .pst_1{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    .pst_1 img{
+        width: auto;
+        height: auto;
+    }
+    .pst_2{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    .pst_2 img{
+        width: auto;
+        height: auto;
+    }
+    .pst_3{
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+    .pst_3 img{
+        width: auto;
+        height: auto;
+    }
+
+    .UpcomingEvent{
+        width: 100%;
+        height: auto;
+    }
+    .UpcomingEvent h1{
+        font-size: 200%;
+    }
+    .event_1{
+        width: 100%;
+        height: auto;
+    }
+    .event_2{
+        width: 100%;
+        height: auto;
+    }
+    .numbers{
+        display: block;
+        padding: 20%;
+        font-size: 150%;
+    }
+    .num_1{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_2{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_3{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_4{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .testimonals{
+        font-size: 100%;
+    }
+    .WhatOurStudentSay{
+        display: block;
+    }
+    .student_1{
+        font-size: 100%;
+    }
+    .student_2{
+        font-size: 100%;
+    }
+}
+@media (max-width:468px){
+    .PostEvents{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    .LatestPosts{
+        width: 100%;
+        height: auto;
+    }
+    .LatestPosts h1{
+        font-size: 150%;
+    }
+    .pst_1{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .pst_1 img{
+        width: 100%;
+        height: auto;
+    }
+    .pst_2{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .pst_2 img{
+        width: 100%;
+        height: auto;
+    }
+    .pst_3{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .pst_3 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .UpcomingEvent{
+        width: 100%;
+        height: auto;
+    }
+    .UpcomingEvent h1{
+        font-size: 150%;
+    }
+    .event_1{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .event_1 img{
+        width: 100%;
+        height: auto;
+    }
+    .event_2{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .event_2 img{
+        width: 100%;
+        height: auto;
+    }
+    .numbers{
+        display: block;
+        padding: 20%;
+        font-size: 150%;
+    }
+    .num_1{
+        width: 100%;
+        height: auto;
+    }
+    .num_2{
+        width: 100%;
+        height: auto;
+    }
+    .num_3{
+        width: 100%;
+        height: auto;
+    }
+    .num_4{
+        width: 100%;
+        height: auto;
+    }
+    .testimonals{
+        font-size: 150%;
+    }
+    .WhatOurStudentSay{
+        display: block;
+    }
+    .student_1{
+        font-size: 100%;
+    }
+    .student_2{
+        font-size: 100%;
+    }
+}
+
+/*for laptop and desktop*/
+@media (min-width:1366px){
+    
+}
+
+/*for tablet and ipad*/
+@media (min-width: 769px) and (max-width:1365px){
+    .PostEvents{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    .LatestPosts{
+        width: 100%;
+        height: auto;
+    }
+    .LatestPosts h1{
+        font-size: 250%;
+    }
+    .pst_1{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .pst_1 img{
+        width: 100%;
+        height: auto;
+    }
+    .pst_2{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .pst_2 img{
+        width: 100%;
+        height: auto;
+    }
+    .pst_3{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .pst_3 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .UpcomingEvent{
+        width: 100%;
+        height: auto;
+    }
+    .UpcomingEvent h1{
+        font-size: 250%;
+    }
+    .event_1{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .event_1 img{
+        width: 100%;
+        height: auto;
+    }
+    .event_2{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .event_2 img{
+        width: 100%;
+        height: auto;
+    }
+    .numbers{
+        display: block;
+        padding: 20%;
+        font-size: 200%;
+    }
+    .num_1{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_2{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_3{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .num_4{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .testimonals{
+        font-size: 200%;
+    }
+    .WhatOurStudentSay{
+        display: block;
+    }
+    .student_1{
+        font-size: 150%;
+    }
+    .student_2{
+        font-size: 150%;
+    }
+}
+
+
+
+
+
+
+
+/*contacts*/
+.join{
+    background-color: #ffd000;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+/*.jn img{
+    height: 9rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+}*/
+
+.JoinNow{
+    background-color: navy;
+    color: white;
+    font-size: 2rem;
+    
+}
+.JoinNow button{
+    background-color: #ffd000; 
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+.JoinNow a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/*.ct1{
+    display: flex;
+    justify-content: space-between;
+}
+.ct2{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+/*.contactUs input{
+    width: auto;
+    font-size: 1rem;
+}*/
+.contactUs textarea{
+    font-size: 1rem;
+    width: 25rem;
+    height: 5rem;
+}
+.contactUs h3{
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: .2rem;
+    width: fit-content;
+    border-color: #ffd000;
+}
+
+.SendMessage {
+    background-color: navy; 
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.information h3{
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: .2rem;
+    width: fit-content;
+    border-color: #ffd000;
+}
+
+.info_1{
+    width: 20rem;
+    height: 3rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+.info_2{
+    width: 20rem;
+    height: 3rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+.info_3{
+    width: 20rem;
+    height: 3rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.LastPart{
+    background-color: #125688;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem;
+    border: .1rem solid black;
+    box-sizing: border-box;
+    
+}
+.LastPart_1{
+    width: 40rem;
+}
+
+.SocialMedia .fa{
+    text-decoration: none;
+    text-align: center;
+    width: 1rem;
+    color: white;
+}
+.SocialMedia{
+    width: 100%;
+}
+.LastPart_1 a:hover {background-color: navy;}
+
+
+.Link{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.Link ul li a{
+    text-decoration: yellow;
+    color: white;
+}
+
+.FeaturedLink_1 a:hover {background-color: navy;}
+.FeaturedLink_2 a:hover {background-color: navy;}
+
+.Link ul{
+    color: yellow;
+}
+.LastPart_2{
+    width: 20rem;
+}
+.LastPart_3{
+    width: 20rem;
+}
+
+.pht{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pht_1 img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 6rem;
+}
+.pht_2 img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 6rem;
+}
+.pht_3 img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 6rem;
+}
+.footer_last{
+    background-color:navy;    
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: .1rem solid black;
+    box-sizing: border-box;
+}
+
+/*for mobile*/
+@media (max-width:768px){
+    
+    
+    .join{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 2%;
+    }
+    .jn img{
+        width: 100%;
+        height: auto;
+    }
+    .JoinNow{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
+    .JoinNow h1{
+        text-align: center;
+    }
+    .JoinNow button{
+        width: 50%;
+        height: auto;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 150%;
+    }
+    .contactUs{
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 100%;
+    }
+    .contactUs input{
+        width: 100%;
+        font-size: 80%;
+    }
+    .contactUs textarea{
+        font-size: 80%;
+        width: 100%;
+        height: auto;
+    }
+    .contactUs form{
+        align-items: center;
+    }
+    .information{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .info_1{
+        width: 100%;
+        height: auto;
+    }
+    .info_2{
+        width: 100%;
+        height: auto;
+    }
+    .info_3{
+        width: 100%;
+        height: auto;
+    }
+    .LastPart{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+    .LastPart_1 a:hover {background-color: navy;}
+    .SocialMedia{
+        width: auto;
+        height: auto;
+    }
+    .SocialMedia .fa{
+        width: auto;
+        height: auto;
+    }
+
+    .LastPart h4{
+        width: 80%;
+        height: auto;
+    }
+    .Link ul li a{
+        text-decoration: yellow;
+        color: white;
+    }
+    
+    .FeaturedLink_1 a:hover {background-color: navy;}
+    .FeaturedLink_2 a:hover {background-color: navy;}
+    
+    .Link ul{
+        color: yellow;
+    }
+    .pht img{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .footer_last{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 5%;
+        
+    }
+    .payment img{
+        width: auto;
+        height: auto;
+    }
+    
+}
+
+@media (max-width:468px){
+    .join{
+        width: auto;
+        height: auto;
+        display: block;
+        
+    }
+    .jn img{
+        width: 100%;
+        height: auto;
+    }
+    .JoinNow{
+        width: 100%;
+        height: auto;
+        font-size: 50%;
+    }
+    .JoinNow h1{
+        text-align: center;
+    }
+    .JoinNow button{
+        width: 50%;
+        height: auto;
+        font-size: 150%;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 100%;
+    }
+    .contactUs{
+        width: 100%;
+        height: auto;
+        
+        font-size: 100%;
+    }
+    .ct1{
+        display: block;
+    }
+    .ct2{
+        display: block;
+    }
+    .contactUs input{
+        width: 100%;
+        font-size: 100%;
+    }
+    .contactUs textarea{
+        font-size: 120%;
+        width: 100%;
+        height: auto;
+    }
+    .contactUs form{
+        align-items: center;
+    }
+    .information{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .info_1{
+        width: 100%;
+        height: auto;
+    }
+    .info_2{
+        width: 100%;
+        height: auto;
+    }
+    .info_3{
+        width: 100%;
+        height: auto;
+    }
+    .LastPart{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+    .SocialMedia{
+        width: auto;
+        height: auto;
+    }
+    .SocialMedia .fa{
+        width: auto;
+        height: auto;
+    }
+    .LastPart_1 h4 {
+        width: 50%;
+        height: auto;
+    }
+    .LastPart h4{
+        width: 50%;
+        height: auto;
+    }
+    .Link ul li a{
+        text-decoration: yellow;
+        color: white;
+    }
+    .LastPart_1{
+        width: 100%;
+        height: auto;
+        
+        padding: 5%;
+    }
+    .LastPart_2{
+        width: 100%;
+        height: auto;
+        
+    }
+    .FeaturedLink_1 a:hover {background-color: navy;}
+    .FeaturedLink_2 a:hover {background-color: navy;}
+    
+    .Link ul{
+        color: yellow;
+    }
+    .pht img{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+        
+    }
+    .footer_last{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 5%;
+        
+    }
+    .payment img{
+        width: auto;
+        height: auto;
+    }
+}
+/*for laptop*/
+@media (min-width:1024px){
+    .jn img{
+        width: 100%;
+        height: auto;
+    }
+    .JoinNow{
+        width: 80%;
+        height: auto;
+        font-size: 150%;
+    }
+    .ct1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ct2{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+/*for tablet and ipad*/
+@media (min-width: 769px) and (max-width:1023px){
+    .join{
+        width: auto;
+        height: auto;
+        display: block;
+        
+    }
+    .jn img{
+        width: 100%;
+        height: auto;
+    }
+    .JoinNow{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .JoinNow h1{
+        text-align: center;
+    }
+    .JoinNow button{
+        width: 50%;
+        height: auto;
+        font-size: 150%;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 100%;
+    }
+    .contactUs{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .ct1{
+        display: block;
+    }
+    .ct2{
+        display: block;
+    }
+    .contactUs input{
+        width: 100%;
+        font-size: 100%;
+    }
+    .contactUs textarea{
+        font-size: 120%;
+        width: 100%;
+        height: auto;
+    }
+    .contactUs form{
+        align-items: center;
+    }
+    .information{
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 120%;
+    }
+    .info_1{
+        width: 100%;
+        height: auto;
+    }
+    .info_2{
+        width: 100%;
+        height: auto;
+    }
+    .info_3{
+        width: 100%;
+        height: auto;
+    }
+    .LastPart{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+    .SocialMedia{
+        width: auto;
+        height: auto;
+    }
+    .SocialMedia .fa{
+        width: auto;
+        height: auto;
+    }
+    .LastPart h4{
+        width: 100%;
+        height: auto;
+    }
+    .Link ul li a{
+        text-decoration: yellow;
+        color: white;
+    }
+    
+    .FeaturedLink_1 a:hover {background-color: navy;}
+    .FeaturedLink_2 a:hover {background-color: navy;}
+    
+    .Link ul{
+        color: yellow;
+    }
+    .pht img{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        font-size: 150%;
+    }
+    .footer_last{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 5%;
+        
+    }
+    .payment img{
+        width: auto;
+        height: auto;
+    }
+    
+      
+}
+    
+/*html{
+    font-size: 12px;
+}
+@media (max-width:998px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}*/
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika</title>
+    <link rel="stylesheet" href="temp_15.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+  <div class="header" >
+    <div class="phone-email">
+      <i class="fa fa-phone" style="color: #ffd000;"></i>&nbsp;+61383766284 &nbsp;|&nbsp; <i class="fa fa-envelope" style="color: #ffd000;"></i>&nbsp;info@gmail.com 
+    </div>
+    <div>
+      <button class="ApplyNow"> <a href="1temp15_home.html">Apply Now</a></button>
+
+    </div>
+  </div>
+  <br>
+  <nav class="navbars">
+    <div class="brand-title"><img src="eikra_logo.PNG" alt="eikra_logo"></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="2temp15_course.html">COURSES</a></li>
+        <li><a href="2.1temp15_instructors.html">INSTRUCTORS</a></li>
+        <li><a href="3temp15_posts.html">LATEST POSTS</a></li>
+        <li><a href="3temp15_posts.html#Testimonals">TESTIMONALS</a></li>
+        <li><a href="4temp15_contacts.html">CONTACT</a></li>
+
+        <li class="search-box"><i class="fa fa-search"></i><input type="text" class="search-bar" placeholder="Search Here..."> </li>
+        
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              
+              <div class="cart"><i class="fa fa-shopping-cart" style="font-size:24px; color: black;"></i></div>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Cart is empty</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </button>
+            <div class="dropdown-content">
+              <a href="2temp15_course.html">Courses</a>
+              <a href="3temp15_posts.html">Post</a>
+              <a href="4temp15_contacts.html">Contact</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+    })
+  </script>
+  
+
+  <br>
+  
+
+  <div class="slideshow">
+    
+    
+    <div class="w3-content w3-display-container">
+    
+
+      <div class="sld_1">
+        <img class="mySlides" src="slideshow_1.PNG" >
+        <div class="text-centered">
+          <h2>Best Education Wordpress Theme For 2018</h2>
+          <p >Emply dummy text of the printing and typesetting industry crem lpsum has been the industry's dummy text ever since printingand typesettingindustry.</p>
+          <p></p>
+          <button class="StartCourse"><a href="2temp15_course.html"><b>START A COURSE</b></a> </button>
+        </div>
+      </div>
+
+      <div class="sld_2">
+       <img class="mySlides" src="c_3.PNG" >
+        <div class="text-centered">
+          <h2>Best Education Wordpress Theme For 2018</h2>
+          <p >Emply dummy text of the printing and typesetting industry crem lpsum has been the industry's dummy text ever since printingand typesettingindustry.</p>
+          <p></p>
+          <button class="StartCourse"><a href="2temp15_course.html"><b>START A COURSE</b></a> </button>
+        </div>
+      </div>
+
+      <div class="sld_3">
+        <img class="mySlides" src="c_4.PNG" >
+        <div class="text-centered">
+          <h2>Best Education Wordpress Theme For 2018</h2>
+          <p >Emply dummy text of the printing and typesetting industry crem lpsum has been the industry's dummy text ever since printingand typesettingindustry.</p>
+          <p></p>
+          <button class="StartCourse"><a href="2temp15_course.html"><b>START A COURSE</b></a> </button>
+        </div>
+      </div>
+      
+  
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      
+    </div>
+  
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+    
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+    
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+    </script>
+    
+    <script>
+      var slideIndex = 0;
+        carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+      
+      
+  </div>
+
+  
+
+
+  <div class="boxes" >
+    <div class="leftbox">
+      <h3>Scholarship Facility <i class="fa fa-graduation-cap" style="font-size:48px;color:#ffd000"></i></h3>
+      <p>Eimply dummy test printing ypese tting industry.</p>
+    </div>
+    
+    <div class="middlebox">
+      <h3>Skilled Lectures <i class="fa fa-user" style="font-size:48px;color:#ffd000"></i></h3>
+      <p>Eimply dummy test printing ypese tting industry.</p>
+    </div>
+
+    <div class="rightbox">
+      <h3>Book Library & Store <i class="fa fa-book" style="font-size:48px;color:#ffd000"></i></h3>
+      <p>Eimply dummy test printing ypese tting industry.</p>
+    </div>
+  </div>
+
+
+  <div class="description">
+    <div class="last">
+      <h1>Welcome TO Our Campus</h1>
+      <h4>Truly dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standards.</h4>
+      <p>Simply dummy test of the printing and typesetting industry. Lorem Ipsum has been the industry standards dummy last ever since the 150s when an unkown printer took a gallery of type and scrambled is to make a type specimen book. Simply dummy text of the printing industry. Lorem ipsum has been the industry when an unkown to make a type specimen book. </p>      
+      
+      <button class="ReadMore"> <a href="1temp15_home.html">Read More</a></button>
+    </div>
+    <div class="grl">
+      <img class="girl2"src="girl2.PNG" alt="girl2">
+    </div>
+  </div>
+
+
+  
+  
+
+  <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+
+
+  
+</body>
+</html>
